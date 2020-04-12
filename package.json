@@ -1,0 +1,26 @@
+{
+  "name": "vuejs-fusebox-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "fuse-box": "^3.7.1",
+    "terser": "^4.6.11",
+    "uglify-js": "^3.8.1",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sd-hd/vuejs-fusebox-playground.git"
+  },
+  "author": "Sascha Dewald",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sd-hd/vuejs-fusebox-playground/issues"
+  },
+  "homepage": "https://github.com/sd-hd/vuejs-fusebox-playground#readme"
+}
