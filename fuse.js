@@ -13,11 +13,16 @@ const fuse = FuseBox.init({
 	  output: "dist/$name.js",
 	  plugins: [
 		  WebIndexPlugin(),
-	          PostCSSPlugin([require("postcss-import")]),
-	          CSSResourcePlugin({
+	    PostCSSPlugin([require("postcss-import")]),
+	    CSSResourcePlugin({
 	               dist: "dist/css-resources"
 		  }),
-		  CSSPlugin()
+		  CSSPlugin(),
+      this.isProduction && QuantumPlugin({
+                uglify: true,
+                treeshake: true,
+                bakeApiIntoBundle: "app",
+      }),
 	  ],
 });
 
