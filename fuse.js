@@ -1,4 +1,8 @@
-const { FuseBox, WebIndexPlugin } = require("fuse-box");
+const { 
+	FuseBox, 
+	WebIndexPlugin,
+	PostCSSPlugin,
+} = require("fuse-box");
 const fuse = FuseBox.init({
 	  homeDir: "src",
 	  target: "browser@es6",
