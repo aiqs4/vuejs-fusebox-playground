@@ -23,7 +23,8 @@ const fuse = FuseBox.init({
 
 fuse.dev(); // launch http server
 fuse
-  .bundle("app")
+    .bundle("app")
+    .completed(proc => proc.start)
   .instructions(" > index.ts")
   .hmr()
   .watch();
