@@ -1,5 +1,8 @@
 const { 
 	FuseBox, 
+	CSSPlugin,
+	CSSResourcePlugin,
+	// QuantumPlugin,
 	WebIndexPlugin,
 	PostCSSPlugin,
 } = require("fuse-box");
