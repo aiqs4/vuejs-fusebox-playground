@@ -6,6 +6,7 @@
   "dependencies": {},
   "devDependencies": {
     "fuse-box": "^3.7.1",
+    "postcss": "^7.0.27",
     "terser": "^4.6.11",
     "typescript": "^3.8.3",
     "uglify-js": "^3.8.1"
