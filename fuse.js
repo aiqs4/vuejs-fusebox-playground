@@ -6,9 +6,10 @@ const {
 	WebIndexPlugin,
 	PostCSSPlugin,
 } = require("fuse-box");
+
 const fuse = FuseBox.init({
 	  homeDir: "src",
-	  target: "browser@es6",
+	  target: "browser@esnext",
 	  output: "dist/$name.js",
 	  plugins: [
 		  WebIndexPlugin(),
@@ -19,6 +20,7 @@ const fuse = FuseBox.init({
 		  CSSPlugin()
 	  ],
 });
+
 fuse.dev(); // launch http server
 fuse
   .bundle("app")
